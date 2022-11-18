@@ -4,7 +4,7 @@ from odoo import models, fields, api
 
 
 class testing(models.Model):
-    _name = 'res.partner'
+    _inherit = 'res.partner'
 
     x_studio_category = fields.Selection([('Weekly', 'Weely'), ('Monthly', 'Monthly'), (
         'Yearly', 'Yearly')], string='Purchase Frequency')
