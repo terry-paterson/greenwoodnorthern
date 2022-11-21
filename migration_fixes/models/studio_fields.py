@@ -32,7 +32,7 @@ class SaleOrderInh(models.Model):
     x_studio_related_field_y4LAm = fields.Char(related="partner_id.ref", string='New Related Field', readonly=True, store=True)
 
 
-class SaleOrderInh(models.Model):
+class ResCompanyInh(models.Model):
     _inherit = 'res.company'
 
     x_branch_1 = fields.Many2one('res.partner', string='Branch 1', store=True)
